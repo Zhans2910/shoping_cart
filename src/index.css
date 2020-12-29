@@ -111,6 +111,8 @@ footer{
   display: flex;
 }
 .cart-header{
+  padding: 1rem;
+  margin: 1rem;
   border-bottom: 0.1rem grey solid;
 }
 .cart-items{
@@ -144,5 +146,15 @@ footer{
   font-size: 2rem;
 }
 .total button{
+  flex:1;
+}
+.filter{
+  display: flex;
+  padding:1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem grey solid;
+  justify-content: space-between;
+}
+.filter div {
   flex:1;
 }
