@@ -90,6 +90,7 @@ footer{
   text-align: center;
   flex: 1;
 }
+
 .product_price div{
   font-size: large;
 }
@@ -148,6 +149,19 @@ footer{
 .total button{
   flex:1;
 }
+.form-container{
+  padding:0;
+  list-style-type:none;
+  width:100%;
+}
+.form-container li{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+input{
+  padding: 0.1rem;
+=======
 .filter{
   display: flex;
   padding:1rem;
