@@ -90,6 +90,7 @@ footer{
   text-align: center;
   flex: 1;
 }
+
 .product_price div{
   font-size: large;
 }
@@ -111,6 +112,8 @@ footer{
   display: flex;
 }
 .cart-header{
+  padding: 1rem;
+  margin: 1rem;
   border-bottom: 0.1rem grey solid;
 }
 .cart-items{
@@ -158,4 +161,14 @@ footer{
 }
 input{
   padding: 0.1rem;
+=======
+.filter{
+  display: flex;
+  padding:1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem grey solid;
+  justify-content: space-between;
+}
+.filter div {
+  flex:1;
 }
