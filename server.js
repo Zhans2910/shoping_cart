@@ -28,8 +28,8 @@ app.post("/api/products", async (req,res)=>{
     const savedProduct=await NewProduct.save();
     res.send(savedProduct);
 })
-app.delete("api/products/:id", async (req,res)=>{
-    const deletedProduct=await Product.findByIdAndDelete(req.params._id);
+app.delete("/api/products/:id", async (req,res)=>{
+    const deletedProduct=await Product.findByIdAndDelete(req.params.id);
     res.send(deletedProduct);
 })
 const port=process.env.PORT || 5000;
