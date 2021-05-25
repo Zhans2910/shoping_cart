@@ -35,4 +35,4 @@ class Filter extends Component {
     }
 }
 
-export default connect((state) => ({products: state.products.items, filteredProducts: state.products.filteredItems, size: state.size, sort: state.sort}), {filterProducts, sortProducts} )(Filter)
+export default connect((state) => ({products: state.items, filteredProducts: state.products.filteredItems, size: state.products.size, sort: state.products.sort}), {filterProducts, sortProducts} )(Filter)

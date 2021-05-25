@@ -5,6 +5,8 @@ import Zoom from 'react-reveal/Zoom';
 import formatCurrency from "../util";
 import { connect } from 'react-redux';
 import { fetchProducts } from '../actions/productActions';
+import { addToCart } from '../actions/cartActions';
+
 class Products extends Component {
     constructor(props){
         super(props);
@@ -41,7 +43,7 @@ class Products extends Component {
                                 </a>
                                 <div className="product_price">
                                     <div>{formatCurrency(product.price)}</div>
-                                    <button onClick={()=>this.props.addtoCart(product)} className="primary button">Add to Cart</button>
+                                    <button onClick={()=>this.props.addToCart(product)} className="primary button">Add to Cart</button>
                                 </div>
                             </div>
                         </li>
@@ -71,7 +73,7 @@ class Products extends Component {
  
                                     <div className="product_price">
                                         <div>{formatCurrency(product.price)}</div>
-                                        <button onClick={()=>this.props.addtoCart(product)} className="primary button">Add to Cart</button>
+                                        <button onClick={()=>this.props.addToCart(product)} className="primary button">Add to Cart</button>
                                         </div>
                                 </div>
                             </div>
@@ -82,4 +84,4 @@ class Products extends Component {
         )
     }
 }
-export default connect((state)=> ({products:state.products.filteredItems}), {fetchProducts,})(Products)
+export default connect((state)=> ({products:state.products.filteredItems}), {fetchProducts, addToCart})(Products)
